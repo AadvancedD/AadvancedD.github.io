@@ -1,3 +1,101 @@
-h1 {
+h1{
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+}
+.container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.head,
+.left_arm,
+.torso,
+.right_arm,
+.left_leg,
+.right_leg {
+	background-color: #5f93e8;
 	color: red;
+}
+.head{
+	width: 200px;
+	height: 150px;
+	border-radius: 100px 100px 0 0;
+	margin: 0 auto;
+}
+.head:hover{
+	width: 300px;
+	transition: 1s ease-in-out;
+}
+.body{
+	width: 300px;
+	height: 200px;
+	display: flex;
+}
+.left_arm{
+	width: 40px;
+	height: 150px;
+	border-radius: 20px;
+	margin-right: 10px;
+}
+.torso{
+	width: 200px;
+	height: 200px;
+	margin-top: 10px;
+	border-radius: 0 0 60px 60px;
+}
+.right_arm{
+	width: 40px;
+	height: 150px;
+	border-radius: 20px;
+	margin-left: 10px;
+}
+.legs{
+	display: flex;
+	width: 100px;
+	height: 100px;
+	margin: 0 auto;
+}
+.left_leg{
+	width: 40px;
+	height: 120px;
+	border-radius: 0 0 20px 20px;
+}
+.right_leg{
+	width: 40px;
+	height: 120px;
+	margin-left: 40px;
+	border-radius: 0 0 20px 20px;
+}
+.left_eye, .right_eye { 
+	width: 20px; 
+	height: 20px; 
+	border-radius: 15px; 
+	background-color: white;  
+} 
+.eyes{
+	display: flex;
+}
+
+.left_eye { 
+	/* These properties are new and you haven't encountered
+	in this course. Check out CSS Tricks to see what it does! */
+	position: relative; 
+	top: 100px; 
+	left: 40px; 
+} 
+
+.right_eye { 
+	position: relative; 
+	top: 100px; 
+	left: 120px; 
+}
+.mouth{
+	position: relative;
+	background-color: white;
+	width: 30px;
+	height: 3px;
+	top: 120px;
+	left: 85px;
+	border-radius: 5px;
 }
